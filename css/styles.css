@@ -30,12 +30,12 @@ body::-webkit-scrollbar-thumb {
 /*-- reseteo de rems --*/
 html { font-size: 62.5%}
 /*-- tamaño de letra para laptops--*/
-  h1   { font-size: 4vw; }
-  h2   { font-size: 3vw; }
-  h3   { font-size: 2.5vw; }
-  h4   { font-size: 2.2vw; }
-  h5   { font-size: 1.8vw; }
-  p,a,span,i { font-size: 1.4vw; } 
+h1   { font-size: 4vw; }
+h2   { font-size: 3vw; }
+h3   { font-size: 2.5vw; }
+h4   { font-size: 2.2vw; }
+h5   { font-size: 1.8vw; }
+p,a,span,i { font-size: 1.4vw; } 
 /*-- tamaño de letra para celulares --*/
 @media (max-width: 576px){
   h1   { font-size: 10vw; }
@@ -166,7 +166,6 @@ main{
   background-color: var(--turqouise-1);
   color: var(--white);
   transition: box-shadow .3s;
-
 }
 .conocenos-btn:hover{
   box-shadow: 0 0 7px var(--weak-turquoise); 
@@ -258,7 +257,7 @@ main{
 .contactanos{
   margin-top: 3rem;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
 }
@@ -274,7 +273,7 @@ main{
 .contactanos-text p{
   color: var(--turqouise-1);
   position: absolute; 
-  bottom: -175vh;
+  bottom: -183vh;
 }
 .contactanos-text span{
   color: var(--turqouise-1);
@@ -289,15 +288,23 @@ main{
 input:focus, textarea:focus{
   outline: none;
 }
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
+ -webkit-box-shadow: 0 0 0 30px var(--dark-blue) !important;
+}
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: var(--dark-blue) !important;
+}
 ::placeholder {
   color:#2b7a775e;
   opacity: 1;
 }
-.contactanos-form input{
+.contact-inputs{
   height: 5vh;
   width: 100%;
   margin-bottom: 2.5vh;
-  background-color: transparent;
+  fill: none;
+  background: transparent;
   border: none;
   border-bottom: .5vh solid orange;
   font-size: 1.2vw;
@@ -314,15 +321,33 @@ input:focus, textarea:focus{
   resize: none;
   color: var(--weak-turquoise);
 }
+.submit-btn{
+  background-color: var(--turqouise-1);
+  color: var(--white);
+  transition: box-shadow .3s;
+  border: none;
+}
+.submit-btn:hover{
+  box-shadow: 0 0 7px var(--weak-turquoise); 
+}
 @media (max-width: 576px){
   .contactanos{
     display: block;
   }
-  .contactanos-form input{
+  .contact-inputs{
     font-size: 2.4vw;
   }
   .contactanos-form textarea{
     font-size: 2.4vw;
+  }
+  .submit-btn{
+    font-size: 3.3vw;
+    padding-right: .3vw;
+    padding-left: .3vw;
+    height: 3rem;
+    border-radius: 1vw;
+    margin-top: 0;
+    width: 20%;
   }
 }
 

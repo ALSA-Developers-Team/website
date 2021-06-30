@@ -12,7 +12,7 @@
 <body>
   <!-- Inicio de header -->
   <header class="header">
-    <nav class="navbar-container">
+    <nav class="navbar-container animate__animated animate__fadeIn">
       <ul class="navbar-content">
         <li id="conocenos"><a href="#conocenos">Conócenos</a></li>
         <li class="no-seleccionable">/</li>
@@ -20,7 +20,7 @@
         <li class="no-seleccionable">/</li>
         <li id="servicios"><a href="">Servicios</a></li>
         <li class="no-seleccionable">/</li>
-        <li id="contacto"><a href="">Contacto</a></li>
+        <li id="contacto"><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
     
@@ -105,17 +105,18 @@
     <!------------------------------->
 
     <!-- Section contactanos -->
-    <section class="contactanos">
+    <section class="contactanos" id="contacto">
       <div class="contactanos-text">
         <h3>Contáctanos</h3>
         <p>Información de contacto: <span>contacto@alsadevteam.com</span></p>
       </div>
       <div class="contactanos-form">
         <form action="">
-          <input type="text" placeholder="Nombre completo" required>
-          <input type="email" placeholder="Correo electrónico" required>
-          <input type="text" placeholder="Asunto" required>
+          <input type="text" placeholder="Nombre completo" class="contact-inputs" required>
+          <input type="email" placeholder="Correo electrónico" class="contact-inputs" required>
+          <input type="text" placeholder="Asunto" class="contact-inputs" required>
           <textarea placeholder="Mensaje"></textarea>
+          <input type="submit" class="submit-btn btn">
         </form>
       </div>
     </section>
