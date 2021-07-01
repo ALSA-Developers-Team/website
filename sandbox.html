@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALSA Dev Team</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sandbox.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/shapes.css">
+  <link rel="stylesheet" href="libs/fontawesome-pro-6.0.0-beta1-web/css/fontawesome.min.css">
 </head>
 <body>
   <!-- Inicio de header -->
@@ -19,8 +19,8 @@
         <li id="portafolio"><a href="">Portafolio</a></li>
         <li class="no-seleccionable">/</li>
         <li id="servicios"><a href="">Servicios</a></li>
-        <li class="no-seleccionable">/</li>
-        <li id="contacto"><a href="#contacto">Contacto</a></li>
+        <li class="no-seleccionable" style="display: none;">/</li>
+        <li id="contacto"><a href="#contacto" style="display: none;">Contacto</a></li>
       </ul>
     </nav>
     
@@ -32,80 +32,40 @@
   <!-- Cierre de header -->
 
   <!------------------------------->
-  
+
   <!-- Inicio de main -->
   <main>
-    <!-- Section conocenos -->
-    <section class="conocenos" id="conocenos">
-      <div class="text-conocenos">
-        <div class="text-conocenos-container">
-            <h3>¡Estamos muy contentos de que nos conozcamos!. A contuación nos presentaremos contigo.</h3>
-            <a class="conocenos-btn btn" href="">Contáctanos</a>
-        </div>
-      </div>
-      <div class="img-conocenos">
-        <div class="img-conocenos-container">
-          <div class="card chava">
-            <div class="card-header">
-              <img src="img/chava.png" alt="rover" />
-            </div>
-            <div class="card-body">
-              <span class="tag tag-teal">Developer</span>
-              <h4>
-                Salvador Rico Fano
-              </h4>
-              <p>
-                <br>
-                Hola mi nombre es Salvador Rico Fano o Salva. Talvez me conozcas por DevSalva. 
-                <br>
-                <br>
-                Soy estudiante de Ingeniería en sistemas computacionales, desarrollador Web, programador orientado a objetos en el lenguaje Java.
-              </p>
-            </div>
-          </div>
-          <div class="card aldo">
-            <div class="card-header">
-              <img src="img/aldo.png" alt="ballons" />
-            </div>
-            <div class="card-body">
-              <span class="tag tag-teal">Developer</span>
-              <h4>
-                Aldo Lozano Tenorio
-              </h4>
-              <p>
-                <br>
-                ¿Qué tal? Soy Aldo, es un gusto presentarme contigo; a continuación te cuento un poco sobre mi.
-                <br>
-                <br>
-                También soy estudiante de Ingeniería en sistemas computacionales, me encanta el desarrollo web y sobretodo trabajar en ello.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Cierre de section conocenos -->
-
-    <!------------------------------->
-
     <!-- Section portafolio -->
     <section class="portafolio"> 
-      
+      <div class="border-h3"><h3>Portafolio</h3></div>
+      <div class="portafolio-container">
+        <i class="fa-solid fa-circle-plus"></i>
+        <div class="card">
+          <div class="card-header">
+            <img src="img/portafolio/isar-website.PNG"/>
+          </div>
+          <div class="card-body" style="display: none;">
+            <span class="tag tag-teal">Developer</span>
+            <h4>
+              Salvador Rico Fano
+            </h4>
+            <p>
+              <br>
+              Hola mi nombre es Salvador Rico Fano o Salva. Talvez me conozcas por DevSalva. 
+              <br>
+              <br>
+              Soy estudiante de Ingeniería en sistemas computacionales, desarrollador Web, programador orientado a objetos en el lenguaje Java.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Cierre de section portafolio -->
 
     <!------------------------------->
 
-    <!-- Section servicios -->
-    <section class="servicios">
-      
-    </section>
-    <!-- Cierre de section servicios -->
-
-    <!------------------------------->
-
     <!-- Section contactanos -->
-    <section class="contactanos" id="contacto">
+    <section class="contactanos" id="contacto" style="display: none;">
       <div class="contactanos-text">
         <h3>Contáctanos</h3>
         <p>Información de contacto: <span>contacto@alsadevteam.com</span></p>
@@ -130,7 +90,6 @@
 
   <!-- Cierre de footer -->
 
-  <script src="./libs/particles.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./libs/fontawesome-pro-6.0.0-beta1-web/js/fontawesome.min.js"></script>
 </body>
 </html>

@@ -12,23 +12,21 @@
 <body>
   <!-- Inicio de header -->
   <header class="header">
-    <nav class="navbar-container">
+    <nav class="navbar-container animate__animated animate__fadeIn">
       <ul class="navbar-content">
-        <li id="conocenos"><a href="">Conócenos</a></li>
+        <li id="conocenos"><a href="#conocenos">Conócenos</a></li>
         <li class="no-seleccionable">/</li>
         <li id="portafolio"><a href="">Portafolio</a></li>
         <li class="no-seleccionable">/</li>
         <li id="servicios"><a href="">Servicios</a></li>
-        <li class="no-seleccionable">/</li>
-        <li id="contacto"><a href="">Contacto</a></li>
+        <li class="no-seleccionable" style="display: none;">/</li>
+        <li id="contacto"><a href="#contacto" style="display: none;">Contacto</a></li>
       </ul>
     </nav>
-
-    <div class="alsa" id="alsa">
-      <div class="text">
-        <h1 class="animate__animated animate__bounceInUp">ALSA Dev Team</h1>
-        <h2 class="animate__animated animate__fadeIn">Web development</h2>
-      </div>
+    
+    <div class="alsa">
+      <h1 class="animate__animated animate__bounceInUp">ALSA Dev Team</h1>
+      <h2 class="animate__animated animate__fadeIn">Web development</h2>
     </div>
   </header>
   <!-- Cierre de header -->
@@ -38,23 +36,51 @@
   <!-- Inicio de main -->
   <main>
     <!-- Section conocenos -->
-    <section class="conocenos">
-      <div class="conocenos-container-salva">
-        <div class="salvador conocenos-container-2">
-          <div class="conocenos-img"><img src="img/postit-chava.png" alt=""></div>
-          <div class="conocenos-content-1">
-            <h3>Ya me conoces? Que esperas para conocerme!</h3>
-            <p>Hola mi nombre es Salvador Rico Fano o Salva. Talvez me conozcas por DevSalva. 
-              Soy estudiante de Ingeniería en sistemas computacionales, desarrollador Web, programador orientado a objetos en el lenguaje Java.
-            </p>
-            <p>Resido en México, pero suelo trabajar internacionalmente. Actualmente trabajo para OneCard, como servicio becario en el cual desarrollo aplicativos Web. He trabajado en proyectos como Howhit, BlockHeaven, CreativeSoul, DiveBlocks CorsarioCraft, TheGreenLab, Minplay los cuales son proyectos de gaming basados en Java.</p>
-          </div>
-        </div>
-        <div class="aldo">
+    <section class="conocenos" id="conocenos">
+      <div class="text-conocenos">
+        <div class="text-conocenos-container">
+            <h3>¡Estamos muy contentos de que nos conozcamos!. A contuación nos presentaremos contigo.</h3>
+            <a class="conocenos-btn btn" href="">Contáctanos</a>
         </div>
       </div>
-      <div class="conocenos-container-aldo">
-        <div class="aldo">
+      <div class="img-conocenos">
+        <div class="img-conocenos-container">
+          <div class="card chava">
+            <div class="card-header">
+              <img src="img/chava.png" alt="rover" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">Developer</span>
+              <h4>
+                Salvador Rico Fano
+              </h4>
+              <p>
+                <br>
+                Hola mi nombre es Salvador Rico Fano o Salva. Talvez me conozcas por DevSalva. 
+                <br>
+                <br>
+                Soy estudiante de Ingeniería en sistemas computacionales, desarrollador Web, programador orientado a objetos en el lenguaje Java.
+              </p>
+            </div>
+          </div>
+          <div class="card aldo">
+            <div class="card-header">
+              <img src="img/aldo.png" alt="ballons" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">Developer</span>
+              <h4>
+                Aldo Lozano Tenorio
+              </h4>
+              <p>
+                <br>
+                ¿Qué tal? Soy Aldo, es un gusto presentarme contigo; a continuación te cuento un poco sobre mi.
+                <br>
+                <br>
+                También soy estudiante de Ingeniería en sistemas computacionales, me encanta el desarrollo web y sobretodo trabajar en ello.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -79,8 +105,20 @@
     <!------------------------------->
 
     <!-- Section contactanos -->
-    <section class="contactanos">
-      
+    <section class="contactanos" id="contacto" style="display: none;">
+      <div class="contactanos-text">
+        <h3>Contáctanos</h3>
+        <p>Información de contacto: <span>contacto@alsadevteam.com</span></p>
+      </div>
+      <div class="contactanos-form">
+        <form action="">
+          <input type="text" placeholder="Nombre completo" class="contact-inputs" required>
+          <input type="email" placeholder="Correo electrónico" class="contact-inputs" required>
+          <input type="text" placeholder="Asunto" class="contact-inputs" required>
+          <textarea placeholder="Mensaje"></textarea>
+          <input type="submit" class="submit-btn btn">
+        </form>
+      </div>
     </section>
     <!-- Cierre de section contactanos -->
   </main>
@@ -89,9 +127,7 @@
   <!------------------------------->
   
   <!-- Inicio de footer -->
-  <footer class="footer">
-    <h5>All rights reserved</h5>
-  </footer>
+
   <!-- Cierre de footer -->
 
   <script src="./libs/particles.min.js"></script>
