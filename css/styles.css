@@ -26,6 +26,7 @@ body::-webkit-scrollbar-thumb {
   --turquoise-2:#3AAFA9;
   --weak-turquoise:#DEF2F1;
   --white:#FEFFFF;
+  --transition-time: 0.5s;
 }
 /*-- reseteo de rems --*/
 html { font-size: 62.5%}
@@ -64,7 +65,7 @@ img{
   max-width: 100%;
 }
 /*-- color de background --*/
-body{ background-color: var(--dark-blue); }
+body{ background-color: var(--dark-blue);}
 
 
 /*------- HEADER -------*/
@@ -199,7 +200,6 @@ main{
   align-items: flex-start;
   padding: 2vw;
 }
-
 .tag {
   background: #cccccc;
   border-radius: 2.8vw;
@@ -221,7 +221,13 @@ main{
   color: black;
   font-size: 1vw;
 }
-@media (max-width: 576px){
+@media (max-width: 768px){
+  .text-conocenos{
+    flex-basis: 25%;
+  }
+  .img-conocenos{
+    flex-basis: 73%;
+  }
   .conocenos{
     display: flex;
     flex-direction: column;
@@ -231,11 +237,11 @@ main{
     font-size: 3.3vw;
     padding-right: 1.8vw;
     padding-left: 1.8vw;
-    height: 3rem;
+    height: 4.5rem;
     border-radius: 1vw;
   }
   .tag{
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .card{
     border-radius: 1.5vw;
@@ -248,9 +254,231 @@ main{
   }
   .card-body p {
     margin-top: 1rem;
+    font-size: 2.2vw;
+  }
+}
+
+@media (max-width: 576px){
+  .text-conocenos{
+    flex-basis: 15%;
+  }
+  .img-conocenos{
+    flex-basis: 75%;
+  }
+  .conocenos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .btn{
+    font-size: 3.3vw;
+    padding-right: 1.8vw;
+    padding-left: 1.8vw;
+    height: 2rem;
+    border-radius: 1vw;
+  }
+  .tag{
+    font-size: 1.5vw;
+  }
+  .card{
+    border-radius: 1.5vw;
+    width: 43%;
+  }
+  .card-body{
+    padding: 3vw;
+  }
+  .card-body h4 {
+    font-size: 3.5vw;
+  }
+  .card-body p {
+    margin-top: 1rem;
     font-size: 2.5vw;
   }
+}
 
+/*-- portafolio --*/
+.portafolio{
+  margin-top: 6vh;
+}
+.border-h3{
+  display: flex;
+  justify-content: center;
+}
+.border-h3 h3{
+  color: var(--turquoise-2);
+  border-bottom: .5vh solid var(--turquoise-2);
+  width: 25%;
+  text-align: center;
+}
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  padding-top: 10vh;
+  margin: 0 auto;
+  width: max-content;
+}
+.card-portafolio {
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 25vh;
+  width: 25vw;
+  font-size: 1.5em;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 20px var(--turqouise-1);
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 7px solid var(--turquoise-2);
+  text-decoration: none;
+}
+.card-portafolio:hover {
+  transform: rotate(0);
+}
+.card-portafolio h4 {
+  margin: 0;
+  font-size: 2vw;
+  line-height: 4vh;
+  color: var(--white);
+}
+.card-portafolio p {
+  font-size:.9vw;
+  margin-top: .7vh;
+  line-height: 4vh;
+}
+.card-portafolio .tags {
+  display: flex;
+}
+.card-portafolio .tags .tag-portafolio {
+  font-size: .9vw;
+  background: var(--dark-blue);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 3vh;
+  transition: all, var(--transition-time);
+}
+.card-portafolio:hover .tags .tag-portafolio {
+  background: var(--turqouise-1);
+}
+.card-portafolio .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+.card-portafolio:before, .card-portafolio:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+.card-portafolio:before {
+  background: var(--turquoise-2);
+  width: 250%;
+  height: 250%;
+}
+.card-portafolio:after {
+  background: var(--dark-blue);
+  width: 200%;
+  height: 200%;
+}
+.card-portafolio:hover {
+  color: var(--white);
+}
+.card-portafolio:hover:before, .card-portafolio:hover:after {
+  transform: scale(1);
+}
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space{
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portafolio{
+    margin-top: 8vh;
+  }
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space{
+    margin-left: 0;
+    text-align: center;
+  }
+  .card-portafolio {
+    width: 55vw;
+  }
+  .card-portafolio h4 {
+    font-size: 6vw;
+    line-height: normal;
+  }
+  .card-portafolio p {
+    font-size: 2.5vw;
+    margin-top: .3vh;
+    line-height: 3vh;
+  }
+  .card-portafolio .tags .tag-portafolio {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .card-portafolio {
+    width: 60vw;
+  }
+
+}
+@media screen and (max-width: 450px) {
+  .card-portafolio h4 {
+    font-size: 7vw;
+    line-height: normal;
+  }
+  .card-portafolio p {
+    font-size: 4vw;
+    margin-top: .3vh;
+    line-height: 3vh;
+  }
+  .card-portafolio .tags .tag-portafolio {
+    font-size: 2vw;
+  }
 }
 
 /*-- contactanos --*/
@@ -273,7 +501,7 @@ main{
 .contactanos-text p{
   color: var(--turqouise-1);
   position: absolute; 
-  bottom: -183vh;
+ /*-- **** bottom: -183vh; **** --*/
 }
 .contactanos-text span{
   color: var(--turqouise-1);
@@ -288,9 +516,9 @@ main{
 input:focus, textarea:focus{
   outline: none;
 }
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
+/*-------input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
  -webkit-box-shadow: 0 0 0 30px var(--dark-blue) !important;
-}
+}-------*/
 input:-webkit-autofill
 {
  -webkit-text-fill-color: var(--dark-blue) !important;
@@ -350,5 +578,5 @@ input:-webkit-autofill
     width: 20%;
   }
 }
-
 /*------- FOOTER -------*/
+  

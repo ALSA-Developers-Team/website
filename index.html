@@ -16,9 +16,9 @@
       <ul class="navbar-content">
         <li id="conocenos"><a href="#conocenos">Conócenos</a></li>
         <li class="no-seleccionable">/</li>
-        <li id="portafolio"><a href="">Portafolio</a></li>
-        <li class="no-seleccionable">/</li>
-        <li id="servicios"><a href="">Servicios</a></li>
+        <li id="portafolio"><a href="#portafolio">Portafolio</a></li>
+        <li class="no-seleccionable" style="display: none;">/</li>
+        <li id="servicios"><a href="" style="display: none;">Servicios</a></li>
         <li class="no-seleccionable" style="display: none;">/</li>
         <li id="contacto"><a href="#contacto" style="display: none;">Contacto</a></li>
       </ul>
@@ -39,7 +39,7 @@
     <section class="conocenos" id="conocenos">
       <div class="text-conocenos">
         <div class="text-conocenos-container">
-            <h3>¡Estamos muy contentos de que nos conozcamos!. A contuación nos presentaremos contigo.</h3>
+            <h3>¡Estamos muy contentos de presentarnos contigo!. A contuación conocerás un poco sobre nosotros.</h3>
             <a class="conocenos-btn btn" href="">Contáctanos</a>
         </div>
       </div>
@@ -47,7 +47,7 @@
         <div class="img-conocenos-container">
           <div class="card chava">
             <div class="card-header">
-              <img src="img/chava.png" alt="rover" />
+              <img src="img/conocenos/chava.png" alt="rover" />
             </div>
             <div class="card-body">
               <span class="tag tag-teal">Developer</span>
@@ -65,7 +65,7 @@
           </div>
           <div class="card aldo">
             <div class="card-header">
-              <img src="img/aldo.png" alt="ballons" />
+              <img src="img/conocenos/aldo.png" alt="ballons" />
             </div>
             <div class="card-body">
               <span class="tag tag-teal">Developer</span>
@@ -88,9 +88,55 @@
 
     <!------------------------------->
 
-    <!-- Section portafolio -->
-    <section class="portafolio"> 
-      
+     <!-- Section portafolio -->
+     <section class="portafolio" id="portafolio"> 
+      <div class="border-h3"><h3>Portafolio</h3></div>
+      <div class="cards-wrapper">
+        <div class="card-grid-space">
+          <a class="card-portafolio" href="http://www.isar.edu.mx/" style="--bg-img: url(/img/portafolio/isar-website.png)">
+            <div>
+              <h4>Website ISAR</h4>
+              <p>En este proyecto se reconstruyó por completo el sitio web de la escuela Instituto Soledad Acevedo de los Reyes.</p>
+              <div class="tags">
+                <div class="tag-portafolio">Website</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card-grid-space">
+          <a class="card-portafolio" href="https://web.bibliaminecraft.xyz/" style="--bg-img: url('/img/portafolio/bibliaminecrafr.png')">
+            <div>
+              <h4>Website Bibliaminecraft</h4>
+              <p>En este proyecto se diseñó y creó el sitio web de pormoción del servidor de minecraft "Bibliamineraft.xyz".</p>
+              <div class="tags">
+                <div class="tag-portafolio">Website</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card-grid-space">
+          <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/videoparty.png')">
+            <div>
+              <h4>Plataforma VideoParty</h4>
+              <p>Como proyecto personal creamos una plataforma de streaming simultáneo de películas en grupos.</p>
+              <div class="tags">
+                <div class="tag-portafolio">Web-app</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card-grid-space">
+          <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/template.jpg')">
+            <div>
+              <h4>Diseño de sistema para clases virtuales</h4>
+              <p>Este proyecto fue una prueba piloto del diseño de una plataforma para clases virtuales.</p>
+              <div class="tags">
+                <div class="tag-portafolio">Web-design</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
     <!-- Cierre de section portafolio -->
 
