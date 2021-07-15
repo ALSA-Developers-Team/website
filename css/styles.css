@@ -13,6 +13,7 @@ body::-webkit-scrollbar-track {
   background: var(--dark-blue);        /* color of the tracking area */
 }
 body::-webkit-scrollbar-thumb {
+  display: none;
   background-color: var(--weak-turquoise);    /* color of the scroll thumb */
   border-radius: 5px;       /* roundness of the scroll thumb */
   border: 3px solid var(--turqouise-1);  /* creates padding around scroll thumb */
@@ -463,12 +464,17 @@ main{
   }
   .card-portafolio {
     width: 60vw;
+    margin-top: 2vh;
   }
 
 }
 @media screen and (max-width: 450px) {
+  .border-h3 h3{
+    font-size: 8vw;
+    width: 45%;
+  }
   .card-portafolio h4 {
-    font-size: 7vw;
+    font-size: 6.5vw;
     line-height: normal;
   }
   .card-portafolio p {

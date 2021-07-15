@@ -1,108 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALSA Dev Team</title>
-  <link rel="stylesheet" href="css/sandbox.css">
-  <link rel="stylesheet" href="css/animate.css">
-</head>
-<body>
-  <!-- Inicio de header -->
-  <header class="header">
-    <nav class="navbar-container animate__animated animate__fadeIn">
-      <ul class="navbar-content">
-        <li id="conocenos"><a href="#conocenos">Conócenos</a></li>
-        <li class="no-seleccionable">/</li>
-        <li id="portafolio"><a href="">Portafolio</a></li>
-        <li class="no-seleccionable">/</li>
-        <li id="servicios"><a href="">Servicios</a></li>
-        <li class="no-seleccionable" style="display: none;">/</li>
-        <li id="contacto"><a href="#contacto" style="display: none;">Contacto</a></li>
-      </ul>
-    </nav>
-    
-    <div class="alsa">
-      <h1 class="animate__animated animate__bounceInUp">ALSA Dev Team</h1>
-      <h2 class="animate__animated animate__fadeIn">Web development</h2>
-    </div>
-  </header>
-  <!-- Cierre de header -->
+    <head>
+       <meta charset="utf-8">
+       <title></title>
+       <link href="css/sandbox.css" rel="stylesheet" />
+    </head>
+    <body>
+      <section class="conocenos" id="conocenos">
+         <div class="text-conocenos">
+           <div class="text-conocenos-container">
+               <h3>¡Estamos muy contentos de presentarnos contigo! A contuación conocerás un poco sobre nosotros.</h3>
+               <a class="conocenos-btn btn" href="">Contáctanos</a>
+           </div>
+         </div>
+         <div class="img-conocenos">
+           <div class="img-conocenos-container">
+             <div class="card" id="chava">
+               <div class="card-header">
+                 <img src="img/conocenos/chava.png" alt="rover" />
+               </div>
+               <div class="card-body">
+                 <span class="tag tag-teal">Developer</span>
+                 <h4>
+                   Salvador Rico Fano
+                 </h4>
+                 <p>
+                   <br>
+                   Hola mi nombre es Salvador Rico Fano o Salva. Talvez me conozcas por DevSalva. 
+                   <br>
+                   <br>
+                   Soy estudiante de Ingeniería en sistemas computacionales, desarrollador Web, programador orientado a objetos en el lenguaje Java.
+                 </p>
+               </div>
+             </div>
+             <div class="card aldo">
+               <div class="card-header">
+                 <img src="img/conocenos/aldo.png" alt="ballons" />
+               </div>
+               <div class="card-body">
+                 <span class="tag tag-teal">Developer</span>
+                 <h4>
+                   Aldo Lozano Tenorio
+                 </h4>
+                 <p>
+                   <br>
+                   ¿Qué tal? Soy Aldo, es un gusto presentarme contigo; a continuación te cuento un poco sobre mi.
+                   <br>
+                   <br>
+                   También soy estudiante de Ingeniería en sistemas computacionales, me encanta el desarrollo web y sobretodo trabajar en ello.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
 
-  <!------------------------------->
 
-  <!-- Inicio de main -->
-  <main>
-    <!-- Section portafolio -->
-    <section class="portafolio"> 
-      <div class="border-h3"><h3>Portafolio</h3></div>
-      <div class="cards-wrapper">
-        <div class="card-grid-space">
-          <a class="card-portafolio" href="http://www.isar.edu.mx/" style="--bg-img: url(/img/portafolio/isar-website.png)">
-            <div>
-              <h4>Website ISAR</h4>
-              <p>En este proyecto se reconstruyó por completo el sitio web de la escuela Instituto Soledad Acevedo de los Reyes.</p>
-              <div class="tags">
-                <div class="tag-portafolio">Website</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="card-grid-space">
-          <a class="card-portafolio" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h4>Basic types of HTML tags</h4>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="tags">
-                <div class="tag-portafolio">HTML</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="card-grid-space">
-          <a class="card-portafolio" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
-            <div>
-              <h4>Links, images and about file paths</h4>
-              <p>Learn how to use links and images along with file paths…</p>
-              <div class="tags">
-                <div class="tag-portafolio">HTML</div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- Cierre de section portafolio -->
-
-    <!------------------------------->
-
-    <!-- Section contactanos -->
-    <section class="contactanos" id="contacto" style="display: none;">
-      <div class="contactanos-text">
-        <h3>Contáctanos</h3>
-        <p>Información de contacto: <span>contacto@alsadevteam.com</span></p>
-      </div>
-      <div class="contactanos-form">
-        <form action="">
-          <input type="text" placeholder="Nombre completo" class="contact-inputs" required>
-          <input type="email" placeholder="Correo electrónico" class="contact-inputs" required>
-          <input type="text" placeholder="Asunto" class="contact-inputs" required>
-          <textarea placeholder="Mensaje"></textarea>
-          <input type="submit" class="submit-btn btn">
-        </form>
-      </div>
-    </section>
-    <!-- Cierre de section contactanos -->
-  </main>
-  <!-- Cierre de main -->
-
-  <!------------------------------->
-  
-  <!-- Inicio de footer -->
-
-  <!-- Cierre de footer -->
-
-  <script src="./libs/fontawesome-pro-6.0.0-beta1-web/js/all.min.js"></script>
-</body>
-</html>
+       <script src="libs/three.js-master/build/three.min.js"></script>
+       <script src="js/sandbox.js"></script>
+    </body>
+ </html>
