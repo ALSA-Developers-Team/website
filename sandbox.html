@@ -1,62 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <meta charset="utf-8">
-       <title></title>
-       <link href="css/sandbox.css" rel="stylesheet" />
-    </head>
-    <body>
-      <section class="conocenos" id="conocenos">
-         <div class="text-conocenos">
-           <div class="text-conocenos-container">
-               <h3>¡Estamos muy contentos de presentarnos contigo! A contuación conocerás un poco sobre nosotros.</h3>
-               <a class="conocenos-btn btn" href="">Contáctanos</a>
-           </div>
-         </div>
-         <div class="img-conocenos">
-           <div class="img-conocenos-container">
-             <div class="card" id="chava">
-               <div class="card-header">
-                 <img src="img/conocenos/chava.png" alt="rover" />
-               </div>
-               <div class="card-body">
-                 <span class="tag tag-teal">Developer</span>
-                 <h4>
-                   Salvador Rico Fano
-                 </h4>
-                 <p>
-                   <br>
-                   Hola mi nombre es Salvador Rico Fano o Salva. Talvez me conozcas por DevSalva. 
-                   <br>
-                   <br>
-                   Soy estudiante de Ingeniería en sistemas computacionales, desarrollador Web, programador orientado a objetos en el lenguaje Java.
-                 </p>
-               </div>
-             </div>
-             <div class="card aldo">
-               <div class="card-header">
-                 <img src="img/conocenos/aldo.png" alt="ballons" />
-               </div>
-               <div class="card-body">
-                 <span class="tag tag-teal">Developer</span>
-                 <h4>
-                   Aldo Lozano Tenorio
-                 </h4>
-                 <p>
-                   <br>
-                   ¿Qué tal? Soy Aldo, es un gusto presentarme contigo; a continuación te cuento un poco sobre mi.
-                   <br>
-                   <br>
-                   También soy estudiante de Ingeniería en sistemas computacionales, me encanta el desarrollo web y sobretodo trabajar en ello.
-                 </p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </section>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALSA Dev Team</title>
+  <link rel="stylesheet" href="css/sandbox.css">
+  <link rel="stylesheet" href="css/animate.css">  
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+</head>
+<body id="vanta-bg">
 
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- HEADER -->
+      <div class="swiper-slide">
+        <header class="header">
+          <!-- <nav class="navbar-container animate__animated animate__fadeIn">
+            <ul class="navbar-content">
+              <li id="conocenos"><a href="#conocenos">Conócenos</a></li>
+              <li class="no-seleccionable">/</li>
+              <li id="portafolio"><a href="#portafolio">Portafolio</a></li>
+              <li class="no-seleccionable" style="display: none;">/</li>
+              <li id="servicios"><a href="" style="display: none;">Servicios</a></li>
+              <li class="no-seleccionable" style="display: none;">/</li>
+              <li id="contacto"><a href="#contacto" style="display: none;">Contacto</a></li>
+            </ul>
+          </nav> -->
+          
+          <div class="alsa">
+            <h1 class="animate__animated animate__bounceInUp">ALSA Dev Team</h1>
+            <h2 class="animate__animated animate__fadeIn">Web development</h2>
+          </div>
+        </header>
+      </div>
+      <!-- FINAL HEADER -->
+      
+      <!-- ----------------------- -->
 
-       <script src="libs/three.js-master/build/three.min.js"></script>
-       <script src="js/sandbox.js"></script>
-    </body>
- </html>
+      <!-- SECCION CONOCENOS -->
+      <div class="swiper-slide">
+        <section class="conocenos" id="conocenos">
+          <div class="text-conocenos">
+            <div class="text-conocenos-container">
+                <h3>¡Estamos muy contentos de presentarnos contigo! A contuación conocerás un poco sobre nosotros.</h3>
+                <a class="conocenos-btn btn" href="" data-tilt data-tilt-scale="1.2">Contáctanos</a>
+            </div>
+          </div>
+          <div class="img-conocenos">
+            <div class="img-conocenos-container">
+              <div class="card chava" data-tilt >
+                <div class="card-header">
+                  <img src="img/conocenos/chava.png" alt="rover"/>
+                </div>
+                <div class="card-body" data-tilt data-tilt-scale="1.05">
+                  <span class="tag tag-teal" data-tilt>Developer</span>
+                  <h4>
+                    Salvador Rico Fano
+                  </h4>
+                  <p>
+                    <br>
+                    Hola mi nombre es Salvador Rico Fano o Salva. Talvez me conozcas por DevSalva. 
+                    <br>
+                    <br>
+                    Soy estudiante de Ingeniería en sistemas computacionales, desarrollador Web, programador orientado a objetos en el lenguaje Java.
+                  </p>
+                </div>
+              </div>
+              <div class="card aldo" data-tilt>
+                <div class="card-header">
+                  <img src="img/conocenos/aldo.png" alt="ballons" />
+                </div>
+                <div class="card-body" data-tilt data-tilt-scale="1.05">
+                  <span class="tag tag-teal">Developer</span>
+                  <h4>
+                    Aldo Lozano Tenorio
+                  </h4>
+                  <p>
+                    <br>
+                    ¿Qué tal? Soy Aldo, es un gusto presentarme contigo; a continuación te cuento un poco sobre mi.
+                    <br>
+                    <br>
+                    También soy estudiante de Ingeniería en sistemas computacionales, me encanta el desarrollo web y sobretodo trabajar en ello.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- FINAL SECCION CONOCENOS -->
+
+      <!-- ----------------------- -->
+
+      <!-- PORTAFOLIO -->
+      <div class="swiper-slide">
+        <section class="portafolio" id="portafolio"> 
+          <div class="border-h3"><h3>Portafolio</h3></div>
+          <div class="cards-wrapper" style="overflow-y: scroll;">
+            <div class="card-grid-space">
+              <a class="card-portafolio" href="http://www.isar.edu.mx/" style="--bg-img: url(/img/portafolio/isar-website.png)">
+                <div>
+                  <h4>Website ISAR</h4>
+                  <p>En este proyecto se reconstruyó por completo el sitio web de la escuela Instituto Soledad Acevedo de los Reyes.</p>
+                  <div class="tags">
+                    <div class="tag-portafolio">Website</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <a class="card-portafolio" href="https://web.bibliaminecraft.xyz/" style="--bg-img: url('/img/portafolio/bibliaminecrafr.png')">
+                <div>
+                  <h4>Website Bibliaminecraft</h4>
+                  <p>En este proyecto se diseñó y creó el sitio web de pormoción del servidor de minecraft "Bibliamineraft.xyz".</p>
+                  <div class="tags">
+                    <div class="tag-portafolio">Website</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/videoparty.png')">
+                <div>
+                  <h4>Plataforma VideoParty</h4>
+                  <p>Como proyecto personal creamos una plataforma de streaming simultáneo de películas en grupos.</p>
+                  <div class="tags">
+                    <div class="tag-portafolio">Web-app</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/template.jpg')">
+                <div>
+                  <h4>Diseño de sistema para clases virtuales</h4>
+                  <p>Este proyecto fue una prueba piloto del diseño de una plataforma para clases virtuales.</p>
+                  <div class="tags">
+                    <div class="tag-portafolio">Web-design</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- FINAL PORTAFOLIO -->
+
+      <!-- ----------------------- -->
+
+      <div class="swiper-slide">
+        <section class="portafolio" id="portafolio"> 
+          <div class="border-h3"><h3>Portafolio</h3></div>
+          <div class="cards-wrapper">
+            <div class="card-grid-space">
+              <a class="card-portafolio" href="http://www.isar.edu.mx/" style="--bg-img: url(/img/portafolio/isar-website.png)">
+                <div>
+                  <h4>Website ISAR</h4>
+                  <p>En este proyecto se reconstruyó por completo el sitio web de la escuela Instituto Soledad Acevedo de los Reyes.</p>
+                  <div class="tags">
+                    <div class="tag-portafolio">Website</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <a class="card-portafolio" href="https://web.bibliaminecraft.xyz/" style="--bg-img: url('/img/portafolio/bibliaminecrafr.png')">
+                <div>
+                  <h4>Website Bibliaminecraft</h4>
+                  <p>En este proyecto se diseñó y creó el sitio web de pormoción del servidor de minecraft "Bibliamineraft.xyz".</p>
+                  <div class="tags">
+                    <div class="tag-portafolio">Website</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/videoparty.png')">
+                <div>
+                  <h4>Plataforma VideoParty</h4>
+                  <p>Como proyecto personal creamos una plataforma de streaming simultáneo de películas en grupos.</p>
+                  <div class="tags">
+                    <div class="tag-portafolio">Web-app</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/template.jpg')">
+                <div>
+                  <h4>Diseño de sistema para clases virtuales</h4>
+                  <p>Este proyecto fue una prueba piloto del diseño de una plataforma para clases virtuales.</p>
+                  <div class="tags">
+                    <div class="tag-portafolio">Web-design</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <!-- <audio src="claude debussy - clair de lune [slowed + reverb].mp3" autoplay></audio> -->
+  
+  <script src="libs/three.js-master/build/three.min.js"></script>
+  <script src="libs/vanta.net.min.js"></script>
+  <script src="libs/swiper-bundle.min.js"></script>
+  <script src="libs/vanilla-tilt.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sandbox.js" type="module"></script>
+
+</body>
+</html>

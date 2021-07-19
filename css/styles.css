@@ -68,6 +68,29 @@ img{
 /*-- color de background --*/
 body{ background-color: var(--dark-blue);}
 
+.swiper-container{
+  height: 100vh;
+}
+
+.swiper-slide {
+
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
 /*------- HEADER -------*/
 /*-- navbar --*/
@@ -121,24 +144,24 @@ body{ background-color: var(--dark-blue);}
 
 
 /*-------   MAIN -------*/
-main{
-  padding-right: 4.5rem;
-  padding-left: 4.5rem;
-}
-@media (max-width: 576px){
-  main{
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-  }
-}
+
+
 /*-- conocenos --*/
 .conocenos{
+  padding-right: 4.5rem;
+  padding-left: 4.5rem;
   margin-top: 3rem;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 576px){
+  .conocenos{
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
 }
 .conocenos h3{
   color: var(--weak-turquoise);
