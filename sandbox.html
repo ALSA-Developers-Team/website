@@ -44,7 +44,7 @@
           <div class="text-conocenos">
             <div class="text-conocenos-container">
                 <h3>¡Estamos muy contentos de presentarnos contigo! A contuación conocerás un poco sobre nosotros.</h3>
-                <a class="conocenos-btn btn" href="" data-tilt data-tilt-scale="1.2">Contáctanos</a>
+                <a class="conocenos-btn btn" href="mailto: contacto@alsadevteam.com" data-tilt data-tilt-scale="1.2">Contáctanos</a>
             </div>
           </div>
           <div class="img-conocenos">
@@ -149,12 +149,41 @@
 
       <!-- ----------------------- -->
 
+      <!-- CONTACTO -->
+      <div class="swiper-slide no-overflow">
+        <section class="contactanos">            
+          <div class="contactanos-text">
+            <div class="border-h3-contactanos"><h3>Contáctanos</h3></div>
+            <p class="contacto">Contacto: <a href="mailto: contacto@alsadevteam.com">contacto@alsadevteam.com</a></p>
+          </div>
+          <div class="contactanos-form">
+            <form
+              action="https://formspree.io/f/xeqvlvpg"
+              method="POST"
+              target="hidden_iframe" onsubmit="submitted=true;"
+              class="form"
+            >
+                <label class="form-el" for="email">Correo electrónico:</label>
+                <input class="form-el form-in" type="email" name="_replyto" required>
+                <label class="form-el" for="asunto">Asunto:</label>
+                <input type="text" class="form-el form-in" name="asunto"></input>
+                <label class="form-el" for="nombre">Nombre:</label>
+                <input type="text" class="form-el form-in" name="nombre"></input>
+                <label class="form-el" for="message">Mensaje:</label>
+                <textarea class="form-el form-in form-t" name="message" required></textarea>
+                
+                <button class="form-el form-b" type="submit">Enviar</button>
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+          </div>
+        </section>
+      </div>
+      <!-- FINAL CONTACTO -->
+
 
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-
-    <div class="swiper-pagination"></div>
   
     <div class="swiper-scrollbar"></div>
   </div>
@@ -166,7 +195,6 @@
   <script src="libs/swiper-bundle.min.js"></script>
   <script src="libs/vanilla-tilt.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/sandbox.js" type="module"></script>
 
 </body>
 </html>

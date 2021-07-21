@@ -5,16 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALSA Dev Team</title>
-  <link rel="stylesheet" href="css/sandbox.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/animate.css">  
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 </head>
 <body id="vanta-bg">
 
   <div class="swiper-container">
-    <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      <!-- Slides -->
+      <!-- HEADER -->
       <div class="swiper-slide">
         <header class="header">
           <!-- <nav class="navbar-container animate__animated animate__fadeIn">
@@ -35,23 +34,27 @@
           </div>
         </header>
       </div>
+      <!-- FINAL HEADER -->
       
-      <div class="swiper-slide">
+      <!-- ----------------------- -->
+
+      <!-- SECCION CONOCENOS -->
+      <div class="swiper-slide no-overflow">
         <section class="conocenos" id="conocenos">
           <div class="text-conocenos">
             <div class="text-conocenos-container">
                 <h3>¡Estamos muy contentos de presentarnos contigo! A contuación conocerás un poco sobre nosotros.</h3>
-                <a class="conocenos-btn btn" href="">Contáctanos</a>
+                <a class="conocenos-btn btn" href="mailto: contacto@alsadevteam.com" data-tilt data-tilt-scale="1.2">Contáctanos</a>
             </div>
           </div>
           <div class="img-conocenos">
             <div class="img-conocenos-container">
-              <div class="card chava">
+              <div class="card chava" data-tilt >
                 <div class="card-header">
-                  <img src="img/conocenos/chava.png" alt="rover" />
+                  <img src="img/conocenos/chava.png" alt="rover"/>
                 </div>
-                <div class="card-body">
-                  <span class="tag tag-teal">Developer</span>
+                <div class="card-body" data-tilt data-tilt-scale="1.05">
+                  <span class="tag tag-teal" data-tilt>Developer</span>
                   <h4>
                     Salvador Rico Fano
                   </h4>
@@ -64,11 +67,11 @@
                   </p>
                 </div>
               </div>
-              <div class="card aldo">
+              <div class="card aldo" data-tilt>
                 <div class="card-header">
                   <img src="img/conocenos/aldo.png" alt="ballons" />
                 </div>
-                <div class="card-body">
+                <div class="card-body" data-tilt data-tilt-scale="1.05">
                   <span class="tag tag-teal">Developer</span>
                   <h4>
                     Aldo Lozano Tenorio
@@ -86,7 +89,11 @@
           </div>
         </section>
       </div>
+      <!-- FINAL SECCION CONOCENOS -->
 
+      <!-- ----------------------- -->
+
+      <!-- PORTAFOLIO -->
       <div class="swiper-slide">
         <section class="portafolio" id="portafolio"> 
           <div class="border-h3"><h3>Portafolio</h3></div>
@@ -138,65 +145,46 @@
           </div>
         </section>
       </div>
-      
-      <div class="swiper-slide">
-        <section class="portafolio" id="portafolio"> 
-          <div class="border-h3"><h3>Portafolio</h3></div>
-          <div class="cards-wrapper">
-            <div class="card-grid-space">
-              <a class="card-portafolio" href="http://www.isar.edu.mx/" style="--bg-img: url(/img/portafolio/isar-website.png)">
-                <div>
-                  <h4>Website ISAR</h4>
-                  <p>En este proyecto se reconstruyó por completo el sitio web de la escuela Instituto Soledad Acevedo de los Reyes.</p>
-                  <div class="tags">
-                    <div class="tag-portafolio">Website</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="card-grid-space">
-              <a class="card-portafolio" href="https://web.bibliaminecraft.xyz/" style="--bg-img: url('/img/portafolio/bibliaminecrafr.png')">
-                <div>
-                  <h4>Website Bibliaminecraft</h4>
-                  <p>En este proyecto se diseñó y creó el sitio web de pormoción del servidor de minecraft "Bibliamineraft.xyz".</p>
-                  <div class="tags">
-                    <div class="tag-portafolio">Website</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="card-grid-space">
-              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/videoparty.png')">
-                <div>
-                  <h4>Plataforma VideoParty</h4>
-                  <p>Como proyecto personal creamos una plataforma de streaming simultáneo de películas en grupos.</p>
-                  <div class="tags">
-                    <div class="tag-portafolio">Web-app</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="card-grid-space">
-              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/template.jpg')">
-                <div>
-                  <h4>Diseño de sistema para clases virtuales</h4>
-                  <p>Este proyecto fue una prueba piloto del diseño de una plataforma para clases virtuales.</p>
-                  <div class="tags">
-                    <div class="tag-portafolio">Web-design</div>
-                  </div>
-                </div>
-              </a>
-            </div>
+      <!-- FINAL PORTAFOLIO -->
+
+      <!-- ----------------------- -->
+
+      <!-- CONTACTO -->
+      <div class="swiper-slide no-overflow">
+        <section class="contactanos">            
+          <div class="contactanos-text">
+            <div class="border-h3-contactanos"><h3>Contáctanos</h3></div>
+            <p class="contacto">Contacto: <a href="mailto: contacto@alsadevteam.com">contacto@alsadevteam.com</a></p>
+          </div>
+          <div class="contactanos-form">
+            <form
+              action="https://formspree.io/f/xeqvlvpg"
+              method="POST"
+              target="hidden_iframe" onsubmit="submitted=true;"
+              class="form"
+            >
+                <label class="form-el" for="email">Correo electrónico:</label>
+                <input class="form-el form-in" type="email" name="_replyto" required>
+                <label class="form-el" for="asunto">Asunto:</label>
+                <input type="text" class="form-el form-in" name="asunto"></input>
+                <label class="form-el" for="nombre">Nombre:</label>
+                <input type="text" class="form-el form-in" name="nombre"></input>
+                <label class="form-el" for="message">Mensaje:</label>
+                <textarea class="form-el form-in form-t" name="message" required></textarea>
+                
+                <button class="form-el form-b" type="submit">Enviar</button>
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
           </div>
         </section>
       </div>
+      <!-- FINAL CONTACTO -->
+
+
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
   
-    <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
 
@@ -205,8 +193,8 @@
   <script src="libs/three.js-master/build/three.min.js"></script>
   <script src="libs/vanta.net.min.js"></script>
   <script src="libs/swiper-bundle.min.js"></script>
+  <script src="libs/vanilla-tilt.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/sandbox.js" type="module"></script>
 
 </body>
 </html>

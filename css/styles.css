@@ -4,19 +4,8 @@
   margin: 0;
   padding: 0;
 }
-
-/*-- diseño del scrollbar --*/
-body::-webkit-scrollbar {
-  width: 9px;               /* width of the entire scrollbar */
-}
-body::-webkit-scrollbar-track {
-  background: var(--dark-blue);        /* color of the tracking area */
-}
 body::-webkit-scrollbar-thumb {
   display: none;
-  background-color: var(--weak-turquoise);    /* color of the scroll thumb */
-  border-radius: 5px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--turqouise-1);  /* creates padding around scroll thumb */
 }
 /*-- fuente de letra --*/
 *{ font-family: 'Open Sans', sans-serif;}
@@ -37,7 +26,7 @@ h2   { font-size: 3vw; }
 h3   { font-size: 2.5vw; }
 h4   { font-size: 2.2vw; }
 h5   { font-size: 1.8vw; }
-p,a,span,i { font-size: 1.4vw; } 
+p,a,span,i,label { font-size: 1.4vw; } 
 /*-- tamaño de letra para celulares --*/
 @media (max-width: 576px){
   h1   { font-size: 10vw; }
@@ -45,7 +34,7 @@ p,a,span,i { font-size: 1.4vw; }
   h3   { font-size: 4.5vw; } 
   h4   { font-size: 2.5vw; }
   h5   { font-size: 2.3vw; }
-  p,a,span,i { font-size: 2vw; }
+  p,a,span,i,label { font-size: 2vw; }
 }
 /*-- tamaño de letra para dispositivos medianos --*/
 @media (max-width: 768px){ 
@@ -54,11 +43,11 @@ p,a,span,i { font-size: 1.4vw; }
   h3   { font-size: 4.5vw; } 
   h4   { font-size: 2.5vw; }
   h5   { font-size: 2.3vw; }
-  p,a,span,i { font-size: 2vw; }
+  p,a,span,i,label { font-size: 2vw; }
 }
 /*-- colores de las fuentes --*/
 h1,h2,h3,h4,h5{ color: var(--dark-blue); }
-p,i,span{ color: var(--white);}
+p,i,span,label{ color: var(--white);}
 a{ color: var(--turqouise-1);}
 /*-- imágenes responsivas --*/
 img{
@@ -71,10 +60,11 @@ body{ background-color: var(--dark-blue);}
 .swiper-container{
   height: 100vh;
 }
-
+.swiper-container-v{
+  height: 100vh;
+  width: auto;
+}
 .swiper-slide {
-
-  font-size: 18px;
   background: transparent;
 
   /* Center slide text vertically */
@@ -88,8 +78,13 @@ body{ background-color: var(--dark-blue);}
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  overflow-y: scroll;
+}
+.swiper-slide::-webkit-scrollbar {
+  display: none;
+}
+.no-overflow{
+  overflow-y: hidden;
 }
 
 /*------- HEADER -------*/
@@ -130,7 +125,7 @@ body{ background-color: var(--dark-blue);}
   font-size: 1.4vw;
 }
 /*-- central --*/
-.alsa{                                                                    /*-- ***ARREGLAR ALTURA PARA DISPOSITIVOS DE ANCHO MEDIO*** --*/
+.alsa{
   height: calc(100vh - 4rem);
   display: flex;
   justify-content: center;
@@ -322,7 +317,7 @@ body{ background-color: var(--dark-blue);}
 
 /*-- portafolio --*/
 .portafolio{
-  margin-top: 6vh;
+  margin-top: 7vh;
 }
 .border-h3{
   display: flex;
@@ -512,100 +507,99 @@ body{ background-color: var(--dark-blue);}
 
 /*-- contactanos --*/
 .contactanos{
-  margin-top: 3rem;
-  width: 100%;
-  height: 80vh;
+  padding: 5vw;
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 .contactanos-text{
   flex-basis: 40%;
+}
+.contactanos-form{
+  flex-basis: 50%;
+}
+.border-h3-contactanos{
+  display: flex;
+  justify-content: flex-start;
+}
+.border-h3-contactanos h3{
+  color: var(--turquoise-2);
+  border-bottom: .5vh solid var(--turquoise-2);
+  width: 55%;
+}
+.contactanos-text{
+  display: flex;
   flex-direction: column;
 }
-.contactanos-text h3{
-  align-items: flex-start;
-  color: var(--turqouise-1);
-  border-bottom: .8vh solid orange;
+.contacto{
+  position: absolute;
+  bottom: 2vh;
 }
-.contactanos-text p{
-  color: var(--turqouise-1);
-  position: absolute; 
- /*-- **** bottom: -183vh; **** --*/
+.form{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
 }
-.contactanos-text span{
-  color: var(--turqouise-1);
-  text-decoration: underline;
+.form-el{
+  margin-top: 3vh;
+  color: var(--turquoise-2);
 }
-.contactanos-form{
-  flex-basis: 45%;
-}
-.contactanos-form{
-  padding: 7vh 3vw;
-}
-input:focus, textarea:focus{
-  outline: none;
-}
-/*-------input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
- -webkit-box-shadow: 0 0 0 30px var(--dark-blue) !important;
-}-------*/
-input:-webkit-autofill
-{
- -webkit-text-fill-color: var(--dark-blue) !important;
-}
-::placeholder {
-  color:#2b7a775e;
-  opacity: 1;
-}
-.contact-inputs{
-  height: 5vh;
-  width: 100%;
-  margin-bottom: 2.5vh;
-  fill: none;
-  background: transparent;
-  border: none;
-  border-bottom: .5vh solid orange;
-  font-size: 1.2vw;
-  color: var(--weak-turquoise);
-}
-.contactanos-form textarea{
-  height: 25vh;
-  width: 100%;
-  margin-bottom: 2.5vh;
-  background-color: transparent;
-  border: none;
-  border-bottom: .5vh solid orange;
+.form-in{
+  background-color: var(--dark-blue);
+  opacity: 0.9;
+  border: 1px solid var(--weak-turquoise);
+  border-radius: .5vw;
+  width: 85%;
+  height: 4vh;
+  color: var(--turquoise-2);
   font-size: 1.2vw;
   resize: none;
-  color: var(--weak-turquoise);
 }
-.submit-btn{
-  background-color: var(--turqouise-1);
+.form-t{
+  height: 20vh;
+}
+.form-b{
+  background-color: var(--dark-blue);
+  opacity: 0.9;
+  border: 1px solid var(--weak-turquoise);
+  border-radius: .5vw;
+  width: 85%;
+  height: 4.5vh;
   color: var(--white);
-  transition: box-shadow .3s;
-  border: none;
-}
-.submit-btn:hover{
-  box-shadow: 0 0 7px var(--weak-turquoise); 
+  font-size: 1.2vw;
+  resize: none;
 }
 @media (max-width: 576px){
   .contactanos{
     display: block;
   }
-  .contact-inputs{
-    font-size: 2.4vw;
+  .border-h3-contactanos{
+    justify-content: center;
+  }  
+  .border-h3-contactanos h3{
+    text-align: center;
   }
-  .contactanos-form textarea{
-    font-size: 2.4vw;
+  .form{
+    align-items: center;
   }
-  .submit-btn{
-    font-size: 3.3vw;
-    padding-right: .3vw;
-    padding-left: .3vw;
-    height: 3rem;
-    border-radius: 1vw;
-    margin-top: 0;
-    width: 20%;
+  .form-in{
+    font-size: 3vw;
+    border-radius: 1.5vw;
+  }
+  .form-t{
+    height: 22vh;
+  }
+  .form-b {
+    font-size: 3vw;
+    border-radius: 1.5vw;
+  }
+  label{
+    font-size: 3vw;
+  }
+  .contacto{
+    font-size: 3vw;
+  }
+  .contacto a{
+    font-size: 3vw;
   }
 }
-/*------- FOOTER -------*/
-  
