@@ -168,6 +168,7 @@ body{ background-color: var(--dark-blue);}
 }
 .text-conocenos-container{
   display: block;
+  display: none
 }
 .btn{
   display: flex;
@@ -206,6 +207,7 @@ body{ background-color: var(--dark-blue);}
   box-shadow: 0 2px 20px var(--turqouise-1);
   overflow: hidden;
   width: 40%;
+  display: none;
 }
 .card-header img {
   width: 100%;

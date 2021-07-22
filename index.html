@@ -29,8 +29,8 @@
           </nav> -->
           
           <div class="alsa">
-            <h1 class="animate__animated animate__bounceInUp">ALSA Dev Team</h1>
-            <h2 class="animate__animated animate__fadeIn">Web development</h2>
+            <h1 class="animate__animated animate__bounceInUp" >ALSA Dev Team</h1>
+            <h2 class="animate__animated animate__fadeIn" >Web development</h2>
           </div>
         </header>
       </div>
@@ -42,14 +42,14 @@
       <div class="swiper-slide no-overflow">
         <section class="conocenos" id="conocenos">
           <div class="text-conocenos">
-            <div class="text-conocenos-container">
+            <div class="text-conocenos-container animate__animated" id='an-1'>
                 <h3>¡Estamos muy contentos de presentarnos contigo! A contuación conocerás un poco sobre nosotros.</h3>
-                <a class="conocenos-btn btn" href="mailto: contacto@alsadevteam.com" data-tilt data-tilt-scale="1.2">Contáctanos</a>
+                <a class="conocenos-btn btn animate__animated" id='an-2' href="mailto: contacto@alsadevteam.com" data-tilt data-tilt-scale="1.2">Contáctanos</a>
             </div>
           </div>
           <div class="img-conocenos">
             <div class="img-conocenos-container">
-              <div class="card chava" data-tilt >
+              <div class="card animate__animated" id="an-3">
                 <div class="card-header">
                   <img src="img/conocenos/chava.png" alt="rover"/>
                 </div>
@@ -67,7 +67,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card aldo" data-tilt>
+              <div class="card animate__animated" id="an-4" data-tilt>
                 <div class="card-header">
                   <img src="img/conocenos/aldo.png" alt="ballons" />
                 </div>
@@ -121,7 +121,7 @@
               </a>
             </div>
             <div class="card-grid-space">
-              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/videoparty.png')">
+              <a class="card-portafolio" style="--bg-img: url('/img/portafolio/videoparty.png')">
                 <div>
                   <h4>Plataforma VideoParty</h4>
                   <p>Como proyecto personal creamos una plataforma de streaming simultáneo de películas en grupos.</p>
@@ -132,7 +132,7 @@
               </a>
             </div>
             <div class="card-grid-space">
-              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/template.jpg')">
+              <a class="card-portafolio" style="--bg-img: url('/img/portafolio/template.jpg')">
                 <div>
                   <h4>Diseño de sistema para clases virtuales</h4>
                   <p>Este proyecto fue una prueba piloto del diseño de una plataforma para clases virtuales.</p>
@@ -174,6 +174,7 @@
                 
                 <button class="form-el form-b" type="submit">Enviar</button>
             </form>
+
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
           </div>
         </section>

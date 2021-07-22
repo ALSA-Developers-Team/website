@@ -33,5 +33,37 @@
     mousewheelControl: true
 });
 
+swiper.on('transitionEnd', function() {
+  if (swiper.realIndex === 1){
+    var an1 = document.getElementById('an-1')
+    an1.style.display = 'inline'
+    an1.classList.add('animate__fadeIn')
+    var an2 = document.getElementById('an-2')
+    an2.classList.add('animate__headShake')
 
+    const an_slide1 = ()=>{
+      return new Promise(() => {
+        setTimeout(() =>{
+          var an3 = document.getElementById('an-3')
+          an3.style.display = 'inline'
+          an3.classList.add('animate__fadeInTopLeft')
+          an3.setAttribute('data-tilt', '')
+          var an4 = document.getElementById('an-4')
+          an4.style.display = 'inline'
+          an4.classList.add('animate__fadeInTopRight')
+        },500)
+      });
+    }
+    async function anim(){
+      await an_slide1()
+    }
+    anim()
+  }
+  if (swiper.realIndex === 2){
+
+  }
+  if (swiper.realIndex === 3){
+
+  }
+});
 
