@@ -60,7 +60,18 @@ swiper.on('transitionEnd', function() {
     anim()
   }
   if (swiper.realIndex === 2){
-
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    async function anim(){
+      for(var i=5; i < 9; i++){
+        var an = document.getElementById('an-' + i)
+        an.style.display = 'flex'
+        an.classList.add('animate__zoomIn')
+        await sleep(450)
+      }
+    }
+    anim()
   }
   if (swiper.realIndex === 3){
 

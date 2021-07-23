@@ -156,6 +156,7 @@ body{ background-color: var(--dark-blue);}
   .conocenos{
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+    padding-top: 5vh;
   }
 }
 .conocenos h3{
@@ -349,7 +350,7 @@ body{ background-color: var(--dark-blue);}
   font-size: 1.5em;
   border-radius: 1em;
   padding: 1em;
-  display: flex;
+  display: none;
   align-items: flex-end;
   background-size: cover;
   background-position: center;
@@ -562,14 +563,16 @@ body{ background-color: var(--dark-blue);}
 }
 .form-b{
   background-color: var(--dark-blue);
-  opacity: 0.9;
   border: 1px solid var(--weak-turquoise);
   border-radius: .5vw;
   width: 85%;
   height: 4.5vh;
   color: var(--white);
   font-size: 1.2vw;
-  resize: none;
+}
+input:focus, textarea:focus{
+  outline: none;
+  border: 2.3px solid var(--weak-turquoise);;
 }
 @media (max-width: 576px){
   .contactanos{
