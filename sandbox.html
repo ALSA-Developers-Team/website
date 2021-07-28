@@ -5,11 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALSA Dev Team</title>
-  <link rel="stylesheet" href="css/sandbox.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/animate.css">  
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 </head>
 <body id="vanta-bg">
+  <div class="loader-wrapper">
+  <div class="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
 
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -29,8 +34,8 @@
           </nav> -->
           
           <div class="alsa">
-            <h1 class="animate__animated animate__bounceInUp">ALSA Dev Team</h1>
-            <h2 class="animate__animated animate__fadeIn">Web development</h2>
+            <h1 class="animate__animated animate__bounceInUp animate__delay-1s" >ALSA Dev Team</h1>
+            <h2 class="animate__animated animate__fadeIn animate__delay-2s" >Web development</h2>
           </div>
         </header>
       </div>
@@ -42,14 +47,14 @@
       <div class="swiper-slide no-overflow">
         <section class="conocenos" id="conocenos">
           <div class="text-conocenos">
-            <div class="text-conocenos-container">
-                <h3>¡Estamos muy contentos de presentarnos contigo! A contuación conocerás un poco sobre nosotros.</h3>
-                <a class="conocenos-btn btn" href="mailto: contacto@alsadevteam.com" data-tilt data-tilt-scale="1.2">Contáctanos</a>
+            <div class="text-conocenos-container animate__animated" id='an-1'>
+                <h3>¡Estamos muy contentos de presentarnos contigo! A continuación conocerás un poco sobre nosotros.</h3>
+                <a class="conocenos-btn btn animate__animated" id='an-2' href="mailto: contacto@alsadevteam.com" data-tilt data-tilt-scale="1.2">Contáctanos</a>
             </div>
           </div>
           <div class="img-conocenos">
             <div class="img-conocenos-container">
-              <div class="card chava" data-tilt >
+              <div class="card animate__animated" id="an-3">
                 <div class="card-header">
                   <img src="img/conocenos/chava.png" alt="rover"/>
                 </div>
@@ -67,7 +72,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card aldo" data-tilt>
+              <div class="card animate__animated" id="an-4" data-tilt>
                 <div class="card-header">
                   <img src="img/conocenos/aldo.png" alt="ballons" />
                 </div>
@@ -99,8 +104,8 @@
           <div class="border-h3"><h3>Portafolio</h3></div>
           <div class="cards-wrapper">
             <div class="card-grid-space">
-              <a class="card-portafolio" href="http://www.isar.edu.mx/" style="--bg-img: url(/img/portafolio/isar-website.png)">
-                <div>
+              <a class="card-portafolio animate__animated" data-tilt href="http://www.isar.edu.mx/" style="--bg-img: url(/img/portafolio/isar-website.jpg)" id="an-5">
+                <div data-tilt data-tilt-scale="1.03">
                   <h4>Website ISAR</h4>
                   <p>En este proyecto se reconstruyó por completo el sitio web de la escuela Instituto Soledad Acevedo de los Reyes.</p>
                   <div class="tags">
@@ -110,10 +115,10 @@
               </a>
             </div>
             <div class="card-grid-space">
-              <a class="card-portafolio" href="https://web.bibliaminecraft.xyz/" style="--bg-img: url('/img/portafolio/bibliaminecrafr.png')">
-                <div>
+              <a class="card-portafolio animate__animated" data-tilt href="https://web.bibliaminecraft.xyz/" style="--bg-img: url('/img/portafolio/bibliaminecrafr.jpg')" id="an-6">
+                <div data-tilt data-tilt-scale="1.03">
                   <h4>Website Bibliaminecraft</h4>
-                  <p>En este proyecto se diseñó y creó el sitio web de pormoción del servidor de minecraft "Bibliamineraft.xyz".</p>
+                  <p>En este proyecto se diseñó y creó el sitio web de promoción del servidor de minecraft "Bibliamineraft.xyz".</p>
                   <div class="tags">
                     <div class="tag-portafolio">Website</div>
                   </div>
@@ -121,8 +126,8 @@
               </a>
             </div>
             <div class="card-grid-space">
-              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/videoparty.png')">
-                <div>
+              <a class="card-portafolio animate__animated" data-tilt style="--bg-img: url('/img/portafolio/videoparty.jpg')" id="an-7">
+                <div data-tilt data-tilt-scale="1.03">
                   <h4>Plataforma VideoParty</h4>
                   <p>Como proyecto personal creamos una plataforma de streaming simultáneo de películas en grupos.</p>
                   <div class="tags">
@@ -132,8 +137,8 @@
               </a>
             </div>
             <div class="card-grid-space">
-              <a class="card-portafolio" href="" style="--bg-img: url('/img/portafolio/template.jpg')">
-                <div>
+              <a class="card-portafolio animate__animated" data-tilt style="--bg-img: url('/img/portafolio/template.jpg')" id="an-8">
+                <div data-tilt data-tilt-scale="1.03">
                   <h4>Diseño de sistema para clases virtuales</h4>
                   <p>Este proyecto fue una prueba piloto del diseño de una plataforma para clases virtuales.</p>
                   <div class="tags">
@@ -166,14 +171,15 @@
                 <label class="form-el" for="email">Correo electrónico:</label>
                 <input class="form-el form-in" type="email" name="_replyto" required>
                 <label class="form-el" for="asunto">Asunto:</label>
-                <input type="text" class="form-el form-in" name="asunto"></input>
+                <input type="text" class="form-el form-in" name="asunto" placeholder="Opcional"></input>
                 <label class="form-el" for="nombre">Nombre:</label>
-                <input type="text" class="form-el form-in" name="nombre"></input>
+                <input type="text" class="form-el form-in" name="nombre" placeholder="Opcional"></input>
                 <label class="form-el" for="message">Mensaje:</label>
                 <textarea class="form-el form-in form-t" name="message" required></textarea>
                 
                 <button class="form-el form-b" type="submit">Enviar</button>
             </form>
+
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
           </div>
         </section>

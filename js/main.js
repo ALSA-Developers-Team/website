@@ -1,3 +1,8 @@
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+
+
 /* ---- vanta.js config ---- */
  VANTA.NET({
   el: document.getElementById("vanta-bg"), 
@@ -33,6 +38,8 @@
     mousewheelControl: true
 });
 
+
+//animaciones
 swiper.on('transitionEnd', function() {
   if (swiper.realIndex === 1){
     var an1 = document.getElementById('an-1')
@@ -73,8 +80,6 @@ swiper.on('transitionEnd', function() {
     }
     anim()
   }
-  if (swiper.realIndex === 3){
-
-  }
 });
+
 
